@@ -17,7 +17,9 @@ public class Director {
 		CoinMachine coinMachine = new CoinMachine();
 		System.out.println("Director:Customer을 생성합니다");
 		Customer customer = new Customer();
-		System.out.println("Director:Customer에게 야구 게임을 하도록 지시합니다");
-		customer.playBaseballGame(battingPlace);
+	    System.out.println("Director:배팅케이지 생성");
+	    BattingCage battingCage = new BattingCage();
+		System.out.println("Director:Customer에게 동전을 교환하라고 지시합니다");
+		customer.changeCoin(coinChanger);
 	}
 }
